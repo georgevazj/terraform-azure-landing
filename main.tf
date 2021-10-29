@@ -23,13 +23,6 @@ module "az_workload" {
   sta_name = var.sta_name
 }
 
-module "ddos" {
-  source  = "app.terraform.io/georgevazj-lab/ddos/azure"
-  version = "0.0.1"
-  name = var.ddos_name
-  resource_group_name = module.az_workload.resource_group_name
-}
-
 module "nsg" {
   source  = "app.terraform.io/georgevazj-lab/nsg/azure"
   version = "0.0.1"

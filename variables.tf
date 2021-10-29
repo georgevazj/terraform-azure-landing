@@ -20,11 +20,6 @@ variable "description" {
   description = "(Required) Resource group description"
 }
 
-variable "ddos_name" {
-  type = string
-  description = "(Required) DDOS protection plan name"
-}
-
 variable "nsg_name" {
   type = string
   description = "(Required) Network security group name"
