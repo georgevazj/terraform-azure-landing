@@ -32,8 +32,7 @@ module "nsg" {
 
 module "vnet" {
   source  = "app.terraform.io/georgevazj-lab/vnet/azure"
-  version = "0.0.1"
-  ddos_id = module.ddos.ddos_id
+  version = "0.0.3"
   resource_group_name = module.az_workload.resource_group_name
   vnet_address_space = var.vnet_address_space
   vnet_name = var.vnet_name
